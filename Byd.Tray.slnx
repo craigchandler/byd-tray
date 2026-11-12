@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/Byd.Tray/Byd.Tray.csproj" />
+  <Project Path="tests/Byd.Tray.Tests/Byd.Tray.Tests.csproj" />
+</Solution>

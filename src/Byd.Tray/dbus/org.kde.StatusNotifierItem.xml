@@ -1,0 +1,20 @@
+<!-- Read-only StatusNotifierItem property schema; methods remain handled by Avalonia. -->
+<node><interface name="org.kde.StatusNotifierItem">
+  <property name="Category" type="s" access="read" />
+  <property name="Id" type="s" access="read" />
+  <property name="Title" type="s" access="read" />
+  <property name="Status" type="s" access="read" />
+  <property name="WindowId" type="i" access="read" />
+  <property name="IconThemePath" type="s" access="read" />
+  <property name="Menu" type="o" access="read" />
+  <property name="ItemIsMenu" type="b" access="read" />
+  <property name="IconName" type="s" access="read" />
+  <property name="IconPixmap" type="a(iiay)" access="read" />
+  <property name="OverlayIconName" type="s" access="read" />
+  <property name="OverlayIconPixmap" type="a(iiay)" access="read" />
+  <property name="AttentionIconName" type="s" access="read" />
+  <property name="AttentionIconPixmap" type="a(iiay)" access="read" />
+  <property name="AttentionMovieName" type="s" access="read" />
+  <property name="ToolTip" type="(sa(iiay)ss)" access="read" />
+  <signal name="NewToolTip" />
+</interface></node>

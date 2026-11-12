@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <Version>0.1.0-alpha.1</Version>
+    <IsPackable>false</IsPackable>
+    <Product>BYD Tray</Product>
+    <Description>Unofficial BYD desktop status and opt-in vehicle controls.</Description>
+    <ApplicationIcon>Assets/tray.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
+    <RuntimeIdentifiers>linux-x64;linux-arm64;win-x64;win-arm64</RuntimeIdentifiers>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Byd.Tray.Tests" />
+    <PackageReference Include="Avalonia.Desktop" Version="12.1.6" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="12.1.6" />
+    <PackageReference Include="Mapsui.Avalonia12" Version="5.1.0" />
+    <PackageReference Include="Tmds.DBus.Protocol" Version="0.95.2" />
+    <PackageReference Include="Tmds.DBus.Generator" Version="0.95.2" PrivateAssets="all" />
+    <PackageReference Include="Byd.Client" Version="0.1.0-alpha.1" />
+    <AdditionalFiles Include="dbus/org.kde.KWallet.xml" Namespace="Byd.Tray.DBus" DBusGeneratorMode="Proxy" />
+    <AdditionalFiles Include="dbus/org.kde.StatusNotifierItem.xml" Namespace="Byd.Tray.DBus" DBusGeneratorMode="Handler" />
+    <AvaloniaResource Include="Assets/*" />
+  </ItemGroup>
+</Project>

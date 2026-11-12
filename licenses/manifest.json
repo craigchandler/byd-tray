@@ -1,0 +1,233 @@
+{
+  "files": {
+    "AvaloniaUI-Avalonia-NOTICE.md": {
+      "sha256": "dd6f80852d16320c865a2e403ffd1a8b07a0e34c5b37122c0bc2343639ff68e6",
+      "source": "https://raw.githubusercontent.com/AvaloniaUI/Avalonia/cf8e564674700348947e93ab19105f27afe859a9/NOTICE.md"
+    },
+    "AvaloniaUI-Avalonia-licence.md": {
+      "sha256": "213814d306090074d234d760239ff0f67eb9b8d20eefb4d5631bb39dbe0b769b",
+      "source": "https://raw.githubusercontent.com/AvaloniaUI/Avalonia/cf8e564674700348947e93ab19105f27afe859a9/licence.md"
+    },
+    "AvaloniaUI-Avalonia.BuildServices-LICENSE": {
+      "sha256": "94162c40c663bd96ec1b870e6aba6ef0a43f44c9eb500807e7965e7078f6dc47",
+      "source": "https://raw.githubusercontent.com/AvaloniaUI/Avalonia.BuildServices/777f975b0a0cecf0311273711d56697212c558c0/LICENSE"
+    },
+    "NetTopologySuite-NetTopologySuite-License.md": {
+      "sha256": "81be2ef7f10ff8f27339062bf1a9182c1f8b3a4fe7882699fc328a1a8f8b2693",
+      "source": "https://raw.githubusercontent.com/NetTopologySuite/NetTopologySuite/97d26b92586448b52d5a4f0c060217f94f882c75/License.md"
+    },
+    "NetTopologySuite-NetTopologySuite.Features-LICENSE": {
+      "sha256": "29b2a8a6a60e110a21c7e921d27f49066cc2301b4b7fc4dbbde00291d9f57229",
+      "source": "https://raw.githubusercontent.com/NetTopologySuite/NetTopologySuite.Features/0cb0a03dba8028fde185601168eeb652c3699a50/LICENSE"
+    },
+    "NetTopologySuite-NetTopologySuite.IO.GeoJSON-License.md": {
+      "sha256": "0174e65c0be695ded21941f7d21d979646af1344bc3b2436b8d8f622c765bf5b",
+      "source": "https://raw.githubusercontent.com/NetTopologySuite/NetTopologySuite.IO.GeoJSON/0721747abf0cca9106684e039bbc846951eecc8e/License.md"
+    },
+    "TylerBrinks-ExCSS-license.txt": {
+      "sha256": "fe201d8ad7c9f2122b4813fe0811075b63fbac9f4fb0c9075f49f38718a728ad",
+      "source": "https://raw.githubusercontent.com/TylerBrinks/ExCSS/c97e84d6126bb2e42658cf5af627d52e697c8779/license.txt"
+    },
+    "kekekeks-MicroCom-LICENSE": {
+      "sha256": "6ee769c9ac4dac9abb16b98b1341e9528ff9f4ab685481410d3376d14148f3a9",
+      "source": "https://raw.githubusercontent.com/kekekeks/MicroCom/76785efcafd91b5902fd19dd11145f6dd655b7b4/LICENSE"
+    },
+    "tmds-Tmds.DBus-COPYING": {
+      "sha256": "aca3b49277abcc7886ccb2f115603a9f5b15fc3f96019a10c00f2974098b210c",
+      "source": "https://raw.githubusercontent.com/tmds/Tmds.DBus/5557e043025de2251128ab8048c9d3f0cf50495e/COPYING"
+    },
+    "toptensoftware-richtextkit-license.txt": {
+      "sha256": "3fad09d8c0de945f3435da9e830790cea87344ea24237e167d1a03235fd63036",
+      "source": "https://raw.githubusercontent.com/toptensoftware/richtextkit/ae434c82d8a197e3d259761879fb3f862f12efd8/license.txt"
+    },
+    "wieslawsoltes-Svg.Skia-LICENSE.TXT": {
+      "sha256": "31fdac60ff94d9cab3afef9794905df38c47e82b6879819c025d703d3aebd953",
+      "source": "https://raw.githubusercontent.com/wieslawsoltes/Svg.Skia/0164d01769a8b577f6dcc678f25d4802a06ff8c0/LICENSE.TXT"
+    },
+    "wieslawsoltes-Svg.Skia-src-Svg.Custom-LICENSE.TXT": {
+      "sha256": "d0ab1d6a97c328acf658b57141b6f2863d7eaf0066e42a9fd0792df0c4fd2521",
+      "source": "https://raw.githubusercontent.com/wieslawsoltes/Svg.Skia/0164d01769a8b577f6dcc678f25d4802a06ff8c0/src/Svg.Custom/LICENSE.TXT"
+    }
+  },
+  "packages": {
+    "Avalonia.BuildServices/11.3.2": {
+      "commit": "777f975b0a0cecf0311273711d56697212c558c0",
+      "files": [
+        "AvaloniaUI-Avalonia.BuildServices-LICENSE"
+      ],
+      "repository": "https://github.com/AvaloniaUI/Avalonia.BuildServices"
+    },
+    "Avalonia.Desktop/12.1.6": {
+      "commit": "cf8e564674700348947e93ab19105f27afe859a9",
+      "files": [
+        "AvaloniaUI-Avalonia-licence.md",
+        "AvaloniaUI-Avalonia-NOTICE.md"
+      ],
+      "repository": "https://github.com/AvaloniaUI/Avalonia/"
+    },
+    "Avalonia.FreeDesktop.AtSpi/12.1.6": {
+      "commit": "cf8e564674700348947e93ab19105f27afe859a9",
+      "files": [
+        "AvaloniaUI-Avalonia-licence.md",
+        "AvaloniaUI-Avalonia-NOTICE.md"
+      ],
+      "repository": "https://github.com/AvaloniaUI/Avalonia/"
+    },
+    "Avalonia.FreeDesktop/12.1.6": {
+      "commit": "cf8e564674700348947e93ab19105f27afe859a9",
+      "files": [
+        "AvaloniaUI-Avalonia-licence.md",
+        "AvaloniaUI-Avalonia-NOTICE.md"
+      ],
+      "repository": "https://github.com/AvaloniaUI/Avalonia/"
+    },
+    "Avalonia.HarfBuzz/12.1.6": {
+      "commit": "cf8e564674700348947e93ab19105f27afe859a9",
+      "files": [
+        "AvaloniaUI-Avalonia-licence.md",
+        "AvaloniaUI-Avalonia-NOTICE.md"
+      ],
+      "repository": "https://github.com/AvaloniaUI/Avalonia/"
+    },
+    "Avalonia.Native/12.1.6": {
+      "commit": "cf8e564674700348947e93ab19105f27afe859a9",
+      "files": [
+        "AvaloniaUI-Avalonia-licence.md",
+        "AvaloniaUI-Avalonia-NOTICE.md"
+      ],
+      "repository": "https://github.com/AvaloniaUI/Avalonia/"
+    },
+    "Avalonia.Remote.Protocol/12.1.6": {
+      "commit": "cf8e564674700348947e93ab19105f27afe859a9",
+      "files": [
+        "AvaloniaUI-Avalonia-licence.md",
+        "AvaloniaUI-Avalonia-NOTICE.md"
+      ],
+      "repository": "https://github.com/AvaloniaUI/Avalonia/"
+    },
+    "Avalonia.Skia/12.1.6": {
+      "commit": "cf8e564674700348947e93ab19105f27afe859a9",
+      "files": [
+        "AvaloniaUI-Avalonia-licence.md",
+        "AvaloniaUI-Avalonia-NOTICE.md"
+      ],
+      "repository": "https://github.com/AvaloniaUI/Avalonia/"
+    },
+    "Avalonia.Themes.Fluent/12.1.6": {
+      "commit": "cf8e564674700348947e93ab19105f27afe859a9",
+      "files": [
+        "AvaloniaUI-Avalonia-licence.md",
+        "AvaloniaUI-Avalonia-NOTICE.md"
+      ],
+      "repository": "https://github.com/AvaloniaUI/Avalonia/"
+    },
+    "Avalonia.Win32/12.1.6": {
+      "commit": "cf8e564674700348947e93ab19105f27afe859a9",
+      "files": [
+        "AvaloniaUI-Avalonia-licence.md",
+        "AvaloniaUI-Avalonia-NOTICE.md"
+      ],
+      "repository": "https://github.com/AvaloniaUI/Avalonia/"
+    },
+    "Avalonia.X11/12.1.6": {
+      "commit": "cf8e564674700348947e93ab19105f27afe859a9",
+      "files": [
+        "AvaloniaUI-Avalonia-licence.md",
+        "AvaloniaUI-Avalonia-NOTICE.md"
+      ],
+      "repository": "https://github.com/AvaloniaUI/Avalonia/"
+    },
+    "Avalonia/12.1.6": {
+      "commit": "cf8e564674700348947e93ab19105f27afe859a9",
+      "files": [
+        "AvaloniaUI-Avalonia-licence.md",
+        "AvaloniaUI-Avalonia-NOTICE.md"
+      ],
+      "repository": "https://github.com/AvaloniaUI/Avalonia/"
+    },
+    "ExCSS/4.3.1": {
+      "commit": "c97e84d6126bb2e42658cf5af627d52e697c8779",
+      "files": [
+        "TylerBrinks-ExCSS-license.txt"
+      ],
+      "repository": "https://github.com/TylerBrinks/ExCSS"
+    },
+    "MicroCom.Runtime/0.11.6": {
+      "commit": "76785efcafd91b5902fd19dd11145f6dd655b7b4",
+      "files": [
+        "kekekeks-MicroCom-LICENSE"
+      ],
+      "repository": "https://github.com/kekekeks/MicroCom"
+    },
+    "NetTopologySuite.Features/2.1.0": {
+      "commit": "0cb0a03dba8028fde185601168eeb652c3699a50",
+      "files": [
+        "NetTopologySuite-NetTopologySuite.Features-LICENSE"
+      ],
+      "repository": "https://github.com/NetTopologySuite/NetTopologySuite.Features.git"
+    },
+    "NetTopologySuite.IO.GeoJSON4STJ/4.0.0": {
+      "commit": "0721747abf0cca9106684e039bbc846951eecc8e",
+      "files": [
+        "NetTopologySuite-NetTopologySuite.IO.GeoJSON-License.md"
+      ],
+      "repository": "https://github.com/NetTopologySuite/NetTopologySuite.IO.GeoJSON"
+    },
+    "NetTopologySuite/2.6.0": {
+      "commit": "97d26b92586448b52d5a4f0c060217f94f882c75",
+      "files": [
+        "NetTopologySuite-NetTopologySuite-License.md"
+      ],
+      "repository": "https://github.com/NetTopologySuite/NetTopologySuite"
+    },
+    "ShimSkiaSharp/3.2.1": {
+      "commit": "0164d01769a8b577f6dcc678f25d4802a06ff8c0",
+      "files": [
+        "wieslawsoltes-Svg.Skia-LICENSE.TXT"
+      ],
+      "repository": "https://github.com/wieslawsoltes/Svg.Skia"
+    },
+    "Svg.Custom/3.2.1": {
+      "commit": "0164d01769a8b577f6dcc678f25d4802a06ff8c0",
+      "files": [
+        "wieslawsoltes-Svg.Skia-src-Svg.Custom-LICENSE.TXT"
+      ],
+      "repository": "https://github.com/wieslawsoltes/Svg.Skia"
+    },
+    "Svg.Model/3.2.1": {
+      "commit": "0164d01769a8b577f6dcc678f25d4802a06ff8c0",
+      "files": [
+        "wieslawsoltes-Svg.Skia-LICENSE.TXT"
+      ],
+      "repository": "https://github.com/wieslawsoltes/Svg.Skia"
+    },
+    "Svg.Skia/3.2.1": {
+      "commit": "0164d01769a8b577f6dcc678f25d4802a06ff8c0",
+      "files": [
+        "wieslawsoltes-Svg.Skia-LICENSE.TXT"
+      ],
+      "repository": "https://github.com/wieslawsoltes/Svg.Skia"
+    },
+    "Tmds.DBus.Generator/0.95.2": {
+      "commit": "5557e043025de2251128ab8048c9d3f0cf50495e",
+      "files": [
+        "tmds-Tmds.DBus-COPYING"
+      ],
+      "repository": "https://github.com/tmds/Tmds.DBus.git"
+    },
+    "Tmds.DBus.Protocol/0.95.2": {
+      "commit": "5557e043025de2251128ab8048c9d3f0cf50495e",
+      "files": [
+        "tmds-Tmds.DBus-COPYING"
+      ],
+      "repository": "https://github.com/tmds/Tmds.DBus.git"
+    },
+    "Topten.RichTextKit/0.4.167": {
+      "commit": "ae434c82d8a197e3d259761879fb3f862f12efd8",
+      "files": [
+        "toptensoftware-richtextkit-license.txt"
+      ],
+      "repository": "https://github.com/toptensoftware/richtextkit"
+    }
+  }
+}

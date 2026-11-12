@@ -1,0 +1,34 @@
+# Credentials and private vehicle data must never be committed.
+.env
+.env.*
+!.env.example
+*credentials*
+*secrets*
+*.log
+private/
+captures/
+
+# Build products and local environments
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+bin/
+obj/
+target/
+dist/
+artifacts/
+.idea/
+.vs/
+.DS_Store
+
+# Per-user desktop state and editor settings
+preferences.json
+preferences.json.tmp
+*.user
+*.suo
+TestResults/
+core
+core.*
+*.dmp
+*.dump

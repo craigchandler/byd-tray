@@ -1,0 +1,54 @@
+name: Desktop validation
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  workflow_call:
+permissions:
+  contents: read
+jobs:
+  validate:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            runtime: linux-x64
+          - os: windows-latest
+            runtime: win-x64
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    env:
+      VSTEST_ARTIFACTS_DIRECTORY: ${{ github.workspace }}/artifacts/test-results
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-dotnet@0f4a354dd5547a28c70b7853dbd95d5b67886e73 # v6.1.0
+        with:
+          dotnet-version: '10.0.x'
+      - uses: actions/setup-python@e797f83bcb11b83ae66e0230d6156d7c80228e7c # v6.0.0
+        with:
+          python-version: '3.13'
+      - run: dotnet restore Byd.Tray.slnx --locked-mode
+      - run: dotnet build Byd.Tray.slnx -c Release --no-restore -p:ContinuousIntegrationBuild=true
+      - run: dotnet test Byd.Tray.slnx -c Release --no-build --no-restore
+      - run: python -m unittest discover -s tests/release_checks -v
+      - run: python tools/build-release.py ${{ matrix.runtime }} --no-restore
+      - name: Native Windows demo smoke check
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $archives = @(Get-ChildItem artifacts/releases/BydTray-*-win-x64.zip)
+          if ($archives.Count -ne 1) { throw 'Expected one Windows release archive.' }
+          Expand-Archive $archives[0].FullName artifacts/smoke
+          $executables = @(Get-ChildItem artifacts/smoke/BydTray-*/Byd.Tray.exe)
+          if ($executables.Count -ne 1) { throw 'Expected one Windows executable.' }
+          ./tools/smoke-windows.ps1 -Executable $executables[0].FullName
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: desktop-${{ matrix.runtime }}
+          path: artifacts/releases/*
+          if-no-files-found: error
+          retention-days: 7

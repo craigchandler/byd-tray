@@ -1,0 +1,11 @@
+<!-- Minimal subset of KDE's public KWallet D-Bus interface. -->
+<node><interface name="org.kde.KWallet">
+  <method name="localWallet"><arg type="s" direction="out" /></method>
+  <method name="open"><arg type="i" direction="out" /><arg name="wallet" type="s" direction="in" /><arg name="wId" type="x" direction="in" /><arg name="appid" type="s" direction="in" /></method>
+  <method name="hasFolder"><arg type="b" direction="out" /><arg name="handle" type="i" direction="in" /><arg name="folder" type="s" direction="in" /><arg name="appid" type="s" direction="in" /></method>
+  <method name="createFolder"><arg type="b" direction="out" /><arg name="handle" type="i" direction="in" /><arg name="folder" type="s" direction="in" /><arg name="appid" type="s" direction="in" /></method>
+  <method name="readPassword"><arg type="s" direction="out" /><arg name="handle" type="i" direction="in" /><arg name="folder" type="s" direction="in" /><arg name="key" type="s" direction="in" /><arg name="appid" type="s" direction="in" /></method>
+  <method name="writePassword"><arg type="i" direction="out" /><arg name="handle" type="i" direction="in" /><arg name="folder" type="s" direction="in" /><arg name="key" type="s" direction="in" /><arg name="value" type="s" direction="in" /><arg name="appid" type="s" direction="in" /></method>
+  <method name="removeEntry"><arg type="i" direction="out" /><arg name="handle" type="i" direction="in" /><arg name="folder" type="s" direction="in" /><arg name="key" type="s" direction="in" /><arg name="appid" type="s" direction="in" /></method>
+  <method name="close"><arg type="i" direction="out" /><arg name="handle" type="i" direction="in" /><arg name="force" type="b" direction="in" /><arg name="appid" type="s" direction="in" /></method>
+</interface></node>
