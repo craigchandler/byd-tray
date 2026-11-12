@@ -34,9 +34,21 @@ Startup integration is opt-in. See [usage](docs/usage.md#user-service-and-window
 - **Controls:** off at startup; every vehicle command needs a specific review and locally entered PIN. No automatic command retry. Disabling controls does not undo dispatched commands or vehicle-stored schedules.
 - **Secrets:** KWallet on Linux and Windows Credential Manager on Windows; no plaintext fallback. PINs are never saved.
 
-Signing in may sign the official mobile app out. Status/location reads may wake the car. Optional polling is fifteen minutes and pauses after failure. Fresh profiles have saved-account use, automatic sign-in, polling and controls off. Unknown fields stay unknown.
+Signing in with the same account on another device can invalidate an existing session; see [using the phone app and tray together](#using-the-phone-app-and-tray-together). Status/location reads may wake the car. Optional polling is fifteen minutes and pauses after failure. Fresh profiles have saved-account use, automatic sign-in, polling and controls off. Unknown fields stay unknown.
 
 Read [privacy](docs/privacy.md), [compatibility](docs/compatibility.md) and [usage](docs/usage.md). Never post credentials, PINs, tokens, VINs, precise locations or raw responses in issues.
+
+## Using the phone app and tray together
+
+A new sign-in with the same BYD account can invalidate the earlier session. BYD Tray signing in can therefore sign the phone app out, and another phone/app sign-in can invalidate the tray session. This behaviour was observed with the Australian Atto 3 used during development. BYD explicitly documents a one-account concurrent-device restriction in its [Indonesian app FAQ, question 7](https://www.byd.com/id/aftersales/byd-apps); that is a regional reference, not a verified universal device limit.
+
+For multiple users/devices, BYD provides **Vehicle authorisation** to grant another account access to the same car. [BYD Europe's FAQ](https://www.byd.com/eu/service-maintenance/frequently-asked-questions) describes authorising other users, and [BYD NZ's FAQ](https://www.bydauto.co.nz/faq) confirms cloud-connected vehicle sharing with family or friends.
+
+1. Keep the owner's account on the primary phone. In the official app, look for **Vehicle authorisation** and grant access to the other user's BYD account. Menu labels and available permissions vary by app version/market.
+2. The other phone signs in with that authorised account's own email/password. Vehicle sharing does not transfer ownership or require sharing the owner's password.
+3. A separate authorised account is also an option to test for the tray app, so it does not compete with the phone's login. Start with controls/polling off and one manual status read. Authorised-account compatibility and permissions have **not yet been live-verified with this tray app**; confirm them for your account and vehicle.
+
+The tray does not silently sign in again after a session failure. This avoids a login loop that could repeatedly displace another device. Use the official app to manage authorisations and account security; BYD Tray does not create or grant accounts.
 
 ## Build and test
 
